@@ -7,10 +7,21 @@ Face detection & restoration tools for ComfyUI by Sunx.ai
 
 ## Quickstart
 
+**⚠️ Note**: This extension is not available in ComfyUI Manager. You must install it manually.
+
 1. Install [ComfyUI](https://docs.comfy.org/get_started).
-1. Install [ComfyUI-Manager](https://github.com/ltdrdata/ComfyUI-Manager)
-1. Look up this extension in ComfyUI-Manager. If you are installing manually, clone this repository under `ComfyUI/custom_nodes`.
-1. Restart ComfyUI.
+2. Clone this repository into your `ComfyUI/custom_nodes` directory:
+   ```bash
+   cd ComfyUI/custom_nodes
+   git clone https://github.com/ussoewwin/comfyui_sunxAI_facetools_disabled_mediapipe.git
+   ```
+3. Install dependencies from `requirements.txt`:
+   ```bash
+   cd comfyui_sunxAI_facetools_disabled_mediapipe
+   pip install -r requirements.txt
+   ```
+   **Important**: For Python 3.13 Windows users, see the [Installation Dependencies](#installation-dependencies) section below for special instructions.
+4. Restart ComfyUI.
 
 # Features
 

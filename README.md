@@ -25,11 +25,27 @@ Face detection & restoration tools for ComfyUI by Sunx.ai
 
 ## Installation Dependencies
 
-This extension uses InsightFace for high-precision gender detection. Models will be automatically downloaded on first use:
+This extension uses InsightFace for high-precision gender detection (replacing mediapipe for Python 3.13 compatibility). Models will be automatically downloaded on first use:
+
+### Standard Installation (Python 3.10-3.12)
 
 ```bash
 pip install insightface
 ```
+
+### Python 3.13 Users (Windows Only)
+
+**⚠️ Important**: The standard `pip install insightface` does not provide Python 3.13 wheels. Windows users running Python 3.13 must download the pre-built wheel from:
+
+**https://huggingface.co/ussoewwin/Insightface_for_windows/tree/main**
+
+Download the appropriate wheel file (`insightface-0.7.3-cp313-cp313-win_amd64.whl`) and install it directly:
+
+```bash
+pip install insightface-0.7.3-cp313-cp313-win_amd64.whl
+```
+
+**Note**: This is Windows-only. Linux/macOS Python 3.13 users will need to build from source or use Python 3.12 or earlier.
 
 **Note**: InsightFace requires additional model files that will be automatically downloaded on first run.
 
